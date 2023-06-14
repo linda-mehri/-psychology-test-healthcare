@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-color: #99daee;
+    background-image: url("ciel22.jpg");
+    background-size: cover;
+  }
+  .tales {
+    width: 10%;
+    height: 20px;
+  }
+{
+    height:10%;
+    width: 10%;
+}
+  /*background-image*/
+.bg{
+    background-image:url("http://www.aeroclub-valence.com/images/00-index/background/ciel-06.jpg")
+   }
+  /* Style the footer */
+  footer {
+    background-color:#7fd2d8; /*#b8f8fc**/
+    padding: 10px;
+    text-align: center;
+    position:absolute;
+    bottom: 1000;
+    left: 0;
+    width: 100%;
+    text-decoration: none;
+  }
+  
+  /* Style the footer text */
+  a{
+    text-decoration: none;
+    color: rgb(88, 81, 179);
+  }

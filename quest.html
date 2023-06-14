@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+    <link rel="stylesheet" href="style-pr.css">
+    <script src="calculSomme.js"></script>
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="shotcut icon" href="Psy_logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>questionnaire</title>
+
+  </head>
+  <body>
+    <header>
+      
+<!-- %§%      <div > -->
+      
+     
+        <div >
+            <!--------------- NAVBAR------------->
+            <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#92e3e9">
+             <a class="navbar-brand" href="index.html" ><img width="100px" src="logo.png"></a>
+     
+             <a class="navbar-brand" href="index.html">Accueil</a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+           
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+             
+     
+                 
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Menu
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="index.html">Accueil</a>
+                     <a class="dropdown-item" href="#">Conseils</a>
+                     <a class="dropdown-item" href="Login.html">Mon Compte</a>
+                   
+                     <a class="dropdown-item" href="#">Aide</a>
+     
+     
+                   </div>
+                 </li>
+     
+     
+                 <li class="nav-item">
+                     <a class="nav-link" href="Login.html">Se Connecter</a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="quest.html" style="color: rgb(36, 126, 25)"  >commencer le test</a>
+                   </li>
+                   
+     
+                 
+               </ul>
+               <form class="form-inline my-2 my-lg-0">
+                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                 <button type="button" class="btn btn-outline-success">Search</button>
+               </form>
+             </div>
+           </nav>
+              <!---------------- /NAVBAR-------------->
+
+
+
+
+
+ </header>
+
+</br> </br>
+<h1 class="py-5 text-center "> Inventaire de Dépression de Beck</h1>
+<center>
+<p> <h3 style="color: rgb(72, 99, 124);">Introduction et mise en garde : </h3 >ce questionnaire ne doit pas servir à faire vous-même</br>
+ votre diagnostic de dépression. Le diagnostic ne peut être porté avec fiabilité que par un</br>
+ médecin au vu de divers éléments, les symptômes d'une dépression pouvant être très</br>
+ variables selon les individus. Ce questionnaire peut en revanche vous aider à suivre </br>
+ l'évolution de symptômes dépressifs au cours d'un traitement par exemple.</br>
+ <h3 style="color: rgb(72, 99, 124);">Consignes : </h3>Ce questionnaire comporte 13 séries de quatre propositions. Pour chaque</br>
+ série, lisez les quatre propositions, puis choisissez celle qui décrit le mieux votre état</br>
+ actuel de ces deux dernières semaines. Entourez le numéro qui correspond à la
+ proposition choisie. </br></p>
+</center>
+</br> </br>
+
+
+
+<!-- about section start -->
+<div class="about_section layout_padding" >
+  <div class="container" style="margin-top: 30px; max-width: 1300px;">
+     <div class="row">
+        <div class="col-sm-6">
+          <div>
+            
+            <label for="r1"> <h5 style="color: rgb(4, 61, 94);">Question 1:</h5>
+              0- Je ne me sens pas triste. </br>
+              1- Je me sens triste. </br>
+              2-Je me sens perpétuellement triste et je n'arrive pas à m'en sortir. </br>
+              3- Je suis si triste ou si découragé(e) que je ne peux plus le supporter  </br>
+            </label> </br>
+             
+             <h6>donner le numero  de la reponse </h6>
+             <input type="number" id="r1" value="0" oninput="verifierValeur()" ></br></br>
+<script>
+</script>
+
+          
+             <label for="r2"> <h5 style="color: rgb(4, 61, 94);">Question 2:</h5> 
+              0- Je ne me sens pas particulièrement découragé(e) en pensant à l'avenir.</br>
+              1- Je me sens découragé(e) en pensant à l'avenir.</br>
+              2- Il me semble que je n'ai rien à attendre de l'avenir.</br>
+              3- L'avenir est sans espoir et rien ne s'arrangera.</br>
+             </label>
+            </br> <h6  style="color: rgb(26, 104, 104);">donner le numero  de la reponse
+            </h6> <input type="number" id="r2" value="0"> </br></br>
+            <label for="r3"> <h5 style="color: rgb(4, 61, 94);">Question 3:</h5> 
+              0- Je n'ai pas l'impression d'être une(e) raté(e).</br>
+              1- Je crois avoir connu plus d'échecs que le reste des gens.</br>
+              2- Lorsque je pense à ma vie passée, je ne vois que des échecs.</br>
+              3- Je suis un(e) raté(e)
+             </label>
+            </br> <h6  style="color: rgb(26, 104, 104);">donner le numero  de la reponse
+            </h6> <input type="number" id="r3" value="0"> </br></br>
+          
+            <label for="r4"> <h5 style="color: rgb(4, 61, 94);">Question 4:</h5> 
+             0- Je ne me sens pas particulièrement insatisfait.</br>
+             1- Je ne sais pas profiter agréablement des circonstances.</br>
+             2- Je ne tire plus aucune satisfaction de quoi que ce soit.</br>
+             3- Je suis mécontent de tout
+             </label>
+            </br> <h6  style="color: rgb(26, 104, 104);">donner le numero  de la reponse
+            </h6> <input type="number" id="r4" value="0"> </br> </br>
+          
+          
+            <label for="r5"> <h5 style="color: rgb(4, 61, 94);">Question 5:</h5>
+              0- Je ne me sens pas particulièrement coupable.</br>
+              1- Je me sens coupable une grande partie du temps.</br>
+              2- Je me sens vraiment coupable la plupart du temps.</br>
+              3- Je me sens constamment coupable.</br>
+          
+            </br> <h6  style="color: rgb(26, 104, 104);">donner le numero  de la reponse
+            </h6> <input type="number" id="r5" value="0"> </br> </br>
+          
+          
+          
+            <label for="r6"> <h5 style="color: rgb(4, 61, 94);">Question 6:</h5>
+              0-Je ne suis pas déçu par moi-même.</br>
+              1-Je suis déçu par moi-même.</br>
+              2-Je me dégoûte moi-même.</br>
+              3-Je me hais.</br>
+            </br> <h6  style="color: rgb(26, 104, 104);">donner le numero  de la reponse
+            </h6> <input type="number" id="r6" value="0"> </br> </br>
+          
+            <label for="r7"> <h5 style="color: rgb(4, 61, 94);">Question 7:</h5> 
+           0- Je ne pense pas à me faire du mal.</br>
+           1-Je pense que la mort me libèrerait.</br>
+           2-J'ai des plans précis pour me suicider.</br>
+           3- Si je le pouvais, je me tuerais</br>
+          </br> <h6  style="color: rgb(26, 104, 104);">donner le numero  de la reponse
+          </h6> <input type="number" id="r7" value="0"> </br> </br></div>
+        </div>
+        <div class="col-sm-6" style="color:black">
+          <label for="r8"> <h5 style="color: rgb(4, 61, 94);">Question 8:</h5>
+            0- Je n’ai pas perdu l’intérêt pour les autres gens. </br>
+            1- Maintenant je m’intéresse moins aux autres gens qu’autrefois.</br>
+            2- J’ai perdu tout l’intérêt que je portais aux gens et j’ai peu de sentiments pour eux.</br>
+            3- J’ai perdu tout l’intérêt pour les autres, et ils m’indiffèrent totalement</br>
+           </label>
+          </br> <h6  style="color: rgb(26, 104, 104);">donner le numero  de la reponse
+          </h6> <input type="number" id="r8" value="0"> </br></br>
+          
+          
+          
+          <label for="r9"> <h5 style="color: rgb(4, 61, 94);">Question 9:</h5> 
+            0- Je suis capable de me décider aussi facilement que de coutume.</br>
+            1- J’essaie de ne pas avoir à prendre de décision.</br>
+            2- J’ai de grandes difficultés à prendre des décisions.</br>
+            3- Je ne suis plus capable de prendre la moindre décision </br>
+           </label>
+          </br> <h6  style="color: rgb(26, 104, 104);">donner le numero  de la reponse
+          </h6> <input type="number" id="r9" value="0"> </br></br>
+          
+          <label for="r10"> <h5 style="color: rgb(4, 61, 94);">Question 10 :</h5> 
+            0- Je n’ai pas le sentiment d’être plus laid qu’avant.</br>
+            1- J’ai peur de paraître vieux ou disgracieux.</br>
+            2- J’ai l’impression qu’il y a un changement permanent dans mon apparence physique, qui me fait
+            paraître disgracieux.</br>
+            3- J’ai l’impression d’être laid et repoussant</br>
+           </label>
+          </br> <h6  style="color: rgb(26, 104, 104);">donner le numero  de la reponse
+          </h6> <input type="number" id="r10" value="0"> </br></br>
+          
+          <label for="r11"> <h5 style="color: rgb(4, 61, 94);">Question 11</h5> 
+            0- Je travaille aussi facilement qu’auparavant.</br>
+            1- Il me faut faire un effort supplémentaire pour commencer à faire quelque chose.</br>
+            2- Il faut que je fasse un très grand effort pour faire quoi que ce soit.</br>
+            3- Je suis incapable de faire le moindre travail</br>
+           </label>
+          </br> <h6  style="color: rgb(26, 104, 104);">donner le numero  de la reponse
+          </h6> <input type="number" id="r11" value="0"> </br></br>
+          
+          <label for="r12"> <h5 style="color: rgb(4, 61, 94);">Question 12</h5> 
+            0- Je ne suis pas plus fatigué que d’habitude.</br>
+            1- Je suis fatigué plus facilement que d’habitude.</br>
+            2- Faire quoi que ce soit me fatigue.</br>
+            3- Je suis incapable de faire le moindre travail.</br>
+           </label>
+          </br> <h6  style="color: rgb(26, 104, 104);">donner le numero  de la reponse
+          </h6> <input type="number" id="r12" value="0"> </br></br>
+          
+          <label for="r13"> <h5 style="color: rgb(4, 61, 94);">Question 13 :</h5> 
+          0- Mon appétit est toujours aussi bon.</br>
+          1- Mon appétit n’est pas aussi bon que d’habitude.</br>
+          2- Mon appétit est beaucoup moins bon maintenant.</br>
+          3-Je n’ai plus du tout d’appétit.</br>
+          
+           </label>
+          </br> <h6  style="color: rgb(26, 104, 104);"> donner le numero  de la reponse
+          </h6> <input type="number" id="r13" value="0"> </br></br>
+          
+        </div>
+     </div>
+  </div>
+</div>
+<!-- about section end -->
+
+
+
+<center>
+ <button onclick="calculerSomme()" class="btn btn-success active btn-lg" id="res">Calculer la somme</button></br></br>
+
+ <div class="container">
+              
+  <ul class="list-group"><br>
+      <li class="list-group-item"> valeur</p> </li>
+      <br><br><br><br>
+    
+  </ul>
+  
+  
+  <button type="button" class="btn btn-info">  <a  href= "Hbeat.html" style="color: aliceblue;">  passer à l'étape suivante </a>  </button>
+</div>
+
+<p><h3  style="color: rgb(72, 99, 124);">Cotation :</h3> La note globale est obtenue en additionnant les scores des 13 questions.</br>
+  L’étendue de l’échelle va de 0 à 39. Plus la note est élevée plus le sujet est déprimé.</br>
+  Les différents seuils de gravité retenus par Beck et Beamesderfer :</br>
+  • 0-4 : pas de dépression ;</br>
+  • 4-7 : dépression légère ;</br>
+  • 8-15 : dépression modérée ;</br>
+  • 16 et plus : dépression sévère.</br></p></br>
+
+</center>
+
+<!-------------------------Footer-------------------------->
+
+<footer class="bg-LIGHT text-DARK" >
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-md-5">
+        <h5>Contactez Nous</h5>
+
+        <ul class="list-unstyled">
+          <li><i class="fas fa-map-marker-alt"></i> Tunis</li><br>
+          <li><i class="fas fa-envelope" style="color: rgb(0, 0, 56);"></i> <a href="mailto:MKDconstruction@gmail.com" style="color: rgb(0, 0, 56);"> heartbeatservice@gmail.com </a></li><br>
+          <li><i class="fas fa-phone"></i> 99 999 999</li><br>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Suivez Nous</h5>
+
+        <ul class="list-unstyled">
+          <li><a href="#" style="color: rgb(14, 14, 116);"><i class="fab fa-facebook-f"></i> Facebook</a></li><br>
+          <li><a href="#" style="color: rgb(26, 85, 194);"> <i class="fab fa-twitter"></i> Twitter</a></li><br>
+          <li><a href="#" style="color: rgb(172, 10, 131);"><i class="fab fa-instagram"></i> Instagram</a></li><br>
+        </ul>
+      </div>
+      
+      <div class="col-md-3">
+        <h5>Liens Utiles</h5>
+        <div class="colo">
+
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="linkk" style="color: rgb(0, 0, 56);"> Page D'accueil </a></li><br>
+          <li><a href="#" class="linkk" style="color: rgb(0, 0, 56);">Nos Services</a></li><br>
+          <li><a href="#" class="linkk" style="color: rgb(0, 0, 56);">Nos Contacts</a></li><br>
+        </ul>
+      </div>
+      </div>
+      
+
+    </div>
+  </div>
+</footer>
+<!-----------------------/footer------------------------->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9efaedc578.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+

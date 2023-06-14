@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("ciel.PNG");
+    background-size: cover;
+    background-color: #99daee;
+    height: 10%;
+
+  }
+  /*background-image*/
+
+    
+  /* Style the footer */
+  footer {
+    background-color: #b8f8fc;
+    padding: 10px;
+    text-align: center;
+    position:absolute;
+    bottom: 1000;
+    left: 0;
+    width: 100%;
+    text-decoration: none;
+  }
+  
+  /* Style the footer text */
+  a{
+    text-decoration: none;
+    color: rgb(88, 81, 179);
+  }
